@@ -1,1 +1,20 @@
----
+galaxy_info:
+  author: Michael Lustenberger
+  description: Install the NGINX webserver, plain and quick.
+  company: INOFIX GmbH
+
+  license: license (GPLv3)
+  min_ansible_version: 2.2.1
+  platforms:
+  - name: Debian
+
+  galaxy_tags:
+    - webserver
+    - proxy
+    - load balancer
+    - nginx
+
+dependencies:
+  - { role: inofix.yapkg, yapkg__group_name: 'nginx', yapkg__names: '{{ php__yapkg__names }}', when: '{{ php__yapkg__names is not string and php__yapkg__names is iterable }}' }
+  - { role: inofix.yapkg, yapkg__group_name: 'nginx', yapkg__list: '{{ php__yapkg__list }}', when: '{{ php__yapkg__list is not string and php__yapkg__list is iterable }}' }
+

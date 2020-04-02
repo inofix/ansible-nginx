@@ -11,7 +11,7 @@ Unstable.
 Installation
 ------------
 
-    # ansible-galaxy install inofix.nginx
+    # ansible-galaxy install inofix.ansible-nginx
 
 Requirements
 ------------
@@ -34,7 +34,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - inofix.nginx
+         - inofix.ansible-nginx
 
 License
 -------

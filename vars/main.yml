@@ -3,4 +3,3 @@
 
 nginx__yapkg__names: '{% if app__nginx__yapkg__list is not defined or app__nginx__yapkg__list is none %}{{ app__nginx__yapkg__names | d(default__nginx__yapkg__names) }}{% endif %}'
 nginx__yapkg__list: '{% if app__nginx__yapkg__list is defined and app__nginx__yapkg__list is not none and app__nginx__yapkg__list is not string and app__nginx__yapkg__list is iterable %}{{ app__nginx__yapkg__list }}{% endif %}'
-

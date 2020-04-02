@@ -11,7 +11,7 @@ galaxy_info:
   galaxy_tags:
     - webserver
     - proxy
-    - load balancer
+    - load_balancer
     - nginx
 
 dependencies:

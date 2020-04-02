@@ -4,4 +4,3 @@
 ## take a look at os__pkg_name and yapkg_list
 default__nginx__yapkg__names:
   - 'nginx'
-
